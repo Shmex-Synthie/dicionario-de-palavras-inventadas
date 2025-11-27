@@ -72,6 +72,7 @@
         <th>Definição</th>
         <th>Exemplo de uso</th>
         <th>Data de criação</th>
+        <th>Ações</th>
     </tr>
     </thead>
 
@@ -84,6 +85,14 @@
         <td th:text="${p.definicao}"></td>
         <td th:text="${p.exemplodeuso}"></td>
         <td th:text="${p.dataCriacao}"></td>
+        <td>
+            <a th:href="@{|/deletar?id=${p.id}|}"
+               onclick="return confirm('Tem certeza que deseja excluir esta palavra?');"
+               style="color: white; background: #e74c3c; padding: 6px 12px; border-radius: 6px; text-decoration: none;">
+                Deletar
+            </a>
+        </td>
+
     </tr>
     </tbody>
 </table>

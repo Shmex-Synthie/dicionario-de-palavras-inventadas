@@ -42,5 +42,13 @@ public class HomeController {
         return "palavras";
     }
 
+    @GetMapping("/deletar")
+    public String deletar(@RequestParam("id") Long id) {
+
+        service.deletarPorId(id);
+        return "redirect:/palavras"; // volta pra lista atualizada
+    }
+
+
 
 }

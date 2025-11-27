@@ -43,6 +43,11 @@ public class PalavraService {
         return repository.save(p);
     }
 
+    public void deletarPorId(Long id) {
+        repository.deleteById(id);
+    }
+
+
 
     public List<Palavra> listarTodas() {
         return repository.findAll();
