@@ -53,6 +53,7 @@ public class GeminiService {
         
         NÃO explique nada.
         NÃO descreva a definição.
+        NÃO formate o texto com negrito ou itálico.
         Responda apenas com a frase.
         """.formatted(palavra, definicao);
 
